@@ -48,6 +48,26 @@ Para obtener más ayuda sobre Angular CLI, usa `ng help` o consulta la [document
 
 ![image](https://github.com/user-attachments/assets/5291f35e-f628-4701-9862-f23f20dcf077)
 
+## Consideraciones
+El proyecto se desarrolló siguiendo la arquitectura modular propuesta por Angular, lo que facilita la organización y escalabilidad del código. Para la implementación de estilos, se utilizó SASS, lo que permitió un diseño más eficiente y estructurado.
+
+Además, se adoptó un modelo de componentes reutilizables, promoviendo un desarrollo limpio y consistente. Aunque no se logró implementar JWT para la autenticación, se hizo uso del local storage para gestionar las credenciales del usuario "logeado". Aunque las solicitudes no son seguras según las convenciones, estas se realizan para el usuario autenticado y muestran únicamente la información pertinente a dicho usuario.
+
+
+
+## Login
+Gestión de Usuarios
+Dentro de la base de datos se encuentran cuatro usuarios predefinidos (quemados). No es necesario ingresar una contraseña para autenticarse, pero se implementaron rutas protegidas y privadas simples para gestionar el acceso a las vistas y garantizar que cada usuario acceda solo a la información correspondiente.
+
+![image](https://github.com/user-attachments/assets/08210058-7493-47ac-961e-142507f3fe3b)
+![image](https://github.com/user-attachments/assets/08bd7d6e-c548-4cb0-b179-05009bbc171b)
+
+
+## Trabajos Futuros
+Agregar despliegues para facilitar la accesibilidad y uso del proyecto.
+Implementar pruebas automatizadas utilizando Serenity para garantizar la calidad del software.
+Corrección o manejo de posibles errores, asegurando un comportamiento estable y confiable.
+Implementar carga in-time de información, mejorando la experiencia del usuario al minimizar tiempos de espera y optimizando el consumo de recursos.
 
 ---
 
