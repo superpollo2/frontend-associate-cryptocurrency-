@@ -1,27 +1,53 @@
-# CryptoManagement
+# Proyecto Asociación Criptomonedas - Prueba Técnica Nivel 1 Bancolombia ![Versión del Proyecto](https://img.shields.io/badge/tag-v1.0-pink) [![GitHub commits](https://badgen.net/github/commits/superpollo2/Backend-associate-cryptocurrency)](https://GitHub.com/superpollo2/Backend-associate-cryptocurrency/commit/) 
+## Desarrolladora - Laura Vanesa Tascón Cataño - Ing. de Sistemas 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+### Tecnologías y Herramientas Utilizadas en el Frontend
+- ![Angular](https://img.shields.io/badge/Angular-%23DD0031.svg?logo=angular&logoColor=white)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?logo=typescript&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-%23563D7C.svg?logo=bootstrap&logoColor=white)
+- ![Karma](https://img.shields.io/badge/Karma-%23323330.svg?logo=karma&logoColor=white)
+- ![Protractor](https://img.shields.io/badge/Protractor-%23E23237.svg?logo=protractor&logoColor=white)
 
-## Development server
+> [!NOTA]
+> Este proyecto frontend es una parte integral de la solución técnica que complementa el backend desarrollado.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+# CryptoManagement - Proyecto Frontend Angular ![Versión de Angular](https://img.shields.io/badge/Angular-17.0.9-red)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.0.9.
 
-## Build
+## Servidor de desarrollo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ejecuta `ng serve` para iniciar un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-## Running unit tests
+## Generación de código
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Ejecuta `ng generate component nombre-del-componente` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Running end-to-end tests
+## Construcción
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ejecuta `ng build` para construir el proyecto. Los artefactos de construcción se almacenarán en el directorio `dist/`.
 
-## Further help
+## Ejecución de pruebas unitarias
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Ejecuta `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+
+## Ejecución de pruebas end-to-end
+
+Ejecuta `ng e2e` para ejecutar pruebas end-to-end mediante una plataforma de tu elección. Para usar este comando, primero necesitas agregar un paquete que implemente capacidades de pruebas end-to-end.
+
+## Ayuda adicional
+
+Para obtener más ayuda sobre Angular CLI, usa `ng help` o consulta la [documentación de Angular CLI](https://angular.io/cli).
+
+## Vistas
+![image](https://github.com/user-attachments/assets/13a5a052-0697-4b5f-b6ac-e404f864b067)
+
+![image](https://github.com/user-attachments/assets/b01fb3b9-6c9a-4a5a-9a63-54e8a374c54e)
+
+![image](https://github.com/user-attachments/assets/5291f35e-f628-4701-9862-f23f20dcf077)
+
+
+---
+
