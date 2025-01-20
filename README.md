@@ -5,8 +5,6 @@
 - ![Angular](https://img.shields.io/badge/Angular-%23DD0031.svg?logo=angular&logoColor=white)
 - ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?logo=typescript&logoColor=white)
 - ![Bootstrap](https://img.shields.io/badge/Bootstrap-%23563D7C.svg?logo=bootstrap&logoColor=white)
-- ![Karma](https://img.shields.io/badge/Karma-%23323330.svg?logo=karma&logoColor=white)
-- ![Protractor](https://img.shields.io/badge/Protractor-%23E23237.svg?logo=protractor&logoColor=white)
 
 > [!NOTA]
 > Este proyecto frontend es una parte integral de la solución técnica que complementa el backend desarrollado.
