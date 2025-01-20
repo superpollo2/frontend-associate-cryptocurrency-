@@ -18,6 +18,7 @@ import { GetCoinsService } from '../services/get-coins/get-coins.service';
 export class AddCryptoBtnComponent implements OnInit {
   isModalVisible = false;
   selectedCrypto: number | null = null;
+  amount: number = 1;
   cryptos: CryptoCountry[] = [];
 
   constructor(
@@ -51,12 +52,12 @@ export class AddCryptoBtnComponent implements OnInit {
   }
 
   async addCrypto() {
-    if (this.selectedCrypto === null) {
+    if (this.selectedCrypto === null  || this.amount <= 0) {
       return;
     }
     try {
       const newCoin = await firstValueFrom(
-        this.addCoinService.addCoin(this.selectedCrypto)
+        this.addCoinService.addCoin(this.selectedCrypto, this.amount)
       );
 
       this.getCoinsService.addCrypto(newCoin);

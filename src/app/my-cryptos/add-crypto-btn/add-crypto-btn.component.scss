@@ -13,6 +13,7 @@
 
 .add-crypto-modal {
   h2 {
+    justify-items: center;
     margin-bottom: 64px;
   }
 
@@ -21,7 +22,7 @@
     padding: 10px;
     border: 0;
     border-bottom: 1px solid var(--gray);
-    margin-bottom: 128px;
+    margin-bottom: 50px;
   }
 
   .actions {
@@ -40,5 +41,43 @@
   .btn--cancel {
     background: white;
     border: 1px solid var(--gray);
+  }
+
+  
+}
+
+.amount-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px; /* Espaciado entre el label y el input */
+  margin-bottom: 32px; /* Espacio con respecto a otros elementos */
+}
+
+.amount-container label {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--dark-gray);
+}
+
+.amount-container input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  transition: border-color 0.2s;
+
+  /* Estilo de foco */
+  &:focus {
+    border-color: var(--yellow);
+    outline: none;
+    box-shadow: 0 0 4px rgba(255, 215, 0, 0.6);
+  }
+
+  /* Estilo para el placeholder */
+  &::placeholder {
+    color: var(--light-gray);
+    font-style: italic;
   }
 }

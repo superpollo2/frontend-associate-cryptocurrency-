@@ -59,6 +59,7 @@ export class GetAllCoinsService {
     return this.http.get<GetCoinsResponse>(url).pipe(
       map((res) => {
         const cryptos = res.cryptocoins.map((crypto) => this.mapCrypto(crypto));
+        localStorage.setItem('countryId', res.countryDTO.countryId.toString());
         return { cryptos, country: res.countryDTO.countryName };  
       })
     );

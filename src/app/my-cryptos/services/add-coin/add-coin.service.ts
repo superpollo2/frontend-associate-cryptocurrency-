@@ -14,14 +14,21 @@ interface AddCoinResponse {
   };
 }
 
+interface AddCoinRequest {
+  userId: number;
+  cryptocoinId: number;
+  amount: number;
+}
+
+
 @Injectable({
   providedIn: 'root',
 })
 export class AddCoinService {
   private apiUrl =
-    'https://run.mocky.io/v3/773d495f-eea7-4af1-b2b6-5fc346073084';
+    'http://localhost:8080/api/v1/cryptocoin/user/associate-coin';
 
-  constructor(private http: HttpClient, authService: AuthService) {}
+  constructor(private http: HttpClient, authService: AuthService) { }
 
   private mapCrypto(crypto: any): Crypto {
     return {
@@ -36,10 +43,21 @@ export class AddCoinService {
     };
   }
 
-  addCoin(coinId: number): Observable<Crypto> {
-    const userId = localStorage.getItem('userId');
+  addCoin(cryptocoinId: number, amount: number): Observable<Crypto> {
+    const userId = localStorage.getItem('userId'); 
+
+    if (!userId) {
+      throw new Error('User ID is not available');
+    }
+
+    const requestBody: AddCoinRequest = {
+      userId: Number(userId), 
+      cryptocoinId: Number(cryptocoinId), 
+      amount,
+    };
+
     return this.http
-      .post<AddCoinResponse>(this.apiUrl, { userId, coinId })
+      .post<AddCoinResponse>(this.apiUrl, requestBody)
       .pipe(map((res) => this.mapCrypto(res.coin)));
   }
 }
