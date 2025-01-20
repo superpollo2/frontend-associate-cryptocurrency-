@@ -1,0 +1,24 @@
+<section class="sign-in">
+  <div class="sign-in__container">
+    <h1 class="sign-in__title">Sign In</h1>
+    <form class="sign-in__form">
+      <input
+        type="text"
+        class="sign-in__input"
+        placeholder="user id"
+        [value]="userId"
+        [(ngModel)]="userId"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <input type="text" class="sign-in__input" placeholder="Password" />
+      <button
+        type="submit"
+        class="sign-in__submit"
+        (click)="onSignIn()"
+        [disabled]="userId === null"
+      >
+        SIGN IN
+      </button>
+    </form>
+  </div>
+</section>

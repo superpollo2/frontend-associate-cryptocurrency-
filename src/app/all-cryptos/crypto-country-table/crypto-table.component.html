@@ -1,0 +1,23 @@
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Símbolo</th>
+        <th>Nombre</th>
+        <th>Tasa de cambio</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (crypto of cryptos; track crypto.id) {
+      <tr>
+        <td>{{ crypto.id }}</td>
+        <td>{{ crypto.symbol }}</td>
+        <td>{{ crypto.name }}</td>
+        <td>{{ crypto.rate }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

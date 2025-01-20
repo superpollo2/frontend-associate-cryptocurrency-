@@ -1,0 +1,31 @@
+.delete-crypto-modal {
+  h2 {
+    margin-bottom: 64px;
+  }
+
+  p {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 0;
+    margin-bottom: 128px;
+  }
+
+  .actions {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .btn {
+    background: var(--yellow);
+    border: 0;
+    border-radius: 60px;
+    padding: 6px 20px;
+  }
+
+  .btn--cancel {
+    background: white;
+    border: 1px solid var(--gray);
+  }
+}

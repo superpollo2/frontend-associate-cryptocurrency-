@@ -1,0 +1,31 @@
+.update-crypto-modal {
+  h2 {
+    margin-bottom: 64px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid var(--gray);
+    margin-bottom: 128px;
+  }
+
+  .actions {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .btn {
+    background: var(--yellow);
+    border: 0;
+    border-radius: 60px;
+    padding: 6px 20px;
+  }
+
+  .btn--cancel {
+    background: white;
+    border: 1px solid var(--gray);
+  }
+}

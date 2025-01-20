@@ -1,0 +1,13 @@
+<div class="menu">
+  @for (item of menuItems; track item.link){
+  <a
+    [routerLink]="item.link"
+    [class]="{
+  'menu__item': true,
+  'menu__item--selected': selected === item.link,
+}"
+  >
+    {{ item.label }}
+  </a>
+  }
+</div>

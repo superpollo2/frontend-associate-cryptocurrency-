@@ -1,0 +1,19 @@
+<button class="icon-button" (click)="openModal()">
+  <span class="icon-delete">🗑</span>
+</button>
+<app-modal [isVisible]="isModalVisible" (closeModal)="closeModal()">
+  <div class="delete-crypto-modal">
+    <h2>Eliminar {{ selectedCrypto?.name }}</h2>
+    <p>¿Estás seguro de que deseas eliminar {{ selectedCrypto?.name }}?</p>
+    <div class="actions">
+      <button
+        class="btn"
+        (click)="deleteCrypto()"
+        [disabled]="selectedCrypto === null"
+      >
+        Eliminar
+      </button>
+      <button class="btn btn--cancel" (click)="closeModal()">Cancelar</button>
+    </div>
+  </div>
+</app-modal>

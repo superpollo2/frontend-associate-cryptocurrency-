@@ -1,0 +1,21 @@
+<button class="add-button" (click)="openModal()">AGREGAR MONEDA</button>
+<app-modal [isVisible]="isModalVisible" (closeModal)="closeModal()">
+  <div class="add-crypto-modal">
+    <h2>Listado de monedas</h2>
+    <select [(ngModel)]="selectedCrypto">
+      <option *ngFor="let crypto of cryptos" [value]="crypto.id">
+        {{ crypto.name }}
+      </option>
+    </select>
+    <div class="actions">
+      <button
+        class="btn"
+        (click)="addCrypto()"
+        [disabled]="selectedCrypto === null"
+      >
+        Agregar
+      </button>
+      <button class="btn btn--cancel" (click)="closeModal()">Cancelar</button>
+    </div>
+  </div>
+</app-modal>
